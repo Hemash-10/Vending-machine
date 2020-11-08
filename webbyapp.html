@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Beverage Vending Machine</title>
+</head>
+
+<body>
+    <h1>Beverage Vending Machine</h1>
+
+      <table>
+        <tr>
+            <th name="product">product</th>
+            <th name="no. of product">no.of product</th>
+            <th name="price">price</th>
+        </tr>
+        <tr>
+            <th name="coffee">coffee</th>
+            <th id="C"value="2">2</th>
+            <th name="R20">R20</th>
+        </tr>
+        <tr>
+            <th type="text"name="hot chocolate">hot chocolate</th>
+            <th id="H"value="2">2</th>
+            <th name="R20">R20</th>
+        </tr>
+        <tr>
+            <th name="Tea">Tea</th>
+            <th id="t"value="2">2</th>
+            <th name="R20">R20</th>
+        </tr>
+        <tr>
+            <th name="Mocha">Mocha</th>
+            <th id ="M"value="0">0</th>
+            <th name="R20">R20</th>
+      </table>
+    
+    <button value="Coffee" id="Coffee" onclick="coffeeFunction()">Coffee</button>
+    <button value="Hotchocolate" id="Hotchocolate" onclick="hotchocolateFunction()">Hotchocolate</button>
+    <button value="Tea" id="Tea" onclick="teaFunction()">Tea</button>
+    <button value="Mocha" id="Mocha"onclick="mochaFunction()"> Mocha</button>
+    <br>
+    <br>
+    <button value="refreshBeverage" id="refreshBeverage" onclick="bev()" data-icon="&#8635;"> refreshBeverage</button>
+    <br>
+    <br>
+    <h2 id ="note">choose your comfort</h2>
+    <br>
+    <form style="margin-bottom:10px;">
+        <span>R2  </span><input type="text" name="R02" id="R02" placeholder="0" value="0" oninput="addition()">
+        <br>
+        <span>R5  </span><input type="text" name="R05" id="R05" placeholder="0" value="0" oninput="addition()">
+        <br>
+        <span>R10</span><input type="text" name="R10" id="R10" placeholder="0" value="0" oninput="addition()">
+        <br>
+        <span>R20</span><input type="text" name="R20" id="R20" placeholder="0" value="0" oninput="addition()">
+        <br>
+        <br>
+    </form>
+   <h2>Total: R<span id="paid">0</span></h2>
+    <button value="refreshCoin" id="refreshCoin" onclick="nocoins()" data-icon="&#8635;">refreshCoin</button>
+    <br>
+    <br>
+    <button value="Refresh" id="Refresh"onclick="refresher()" data-icon="&#8635;">Refresh</button>
+
+    <script src="vmath.js"></script>
+</body>
+</html>
