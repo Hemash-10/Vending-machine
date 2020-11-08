@@ -10,7 +10,7 @@ var countHotchocolate = 0;
 var countTea= 0;
 var countMocha=0;
 var pick = 1;
-var i = 0;
+
 
  
 //setting constants for the initial value of coins 
